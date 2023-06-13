@@ -1,14 +1,17 @@
 @font-face {
-  font-family: "Inter-Bold";
-  src: url("./assets/fonts/static/Inter-Bold.ttf");
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Inter-ExtraBold";
-  src: url("./assets/fonts/static/Inter-ExtraBold.ttf");
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 @font-face {
-  font-family: "Inter-Regular";
-  src: url("./assets/fonts/static/Inter-Regular.ttf");
+  font-family: "Inter";
+  src: url("./assets/fonts/static/Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
 }
 
 :root {
@@ -18,14 +21,12 @@
   --Grayish-blue: hsl(233, 8%, 79%);
   --Dark-grayish-blue: hsl(236, 13%, 42%);
   --Very-dark-blue: hsl(240, 100%, 5%);
-  --inter-bold: "Inter-Bold", sans-serif;
-  --inter-extrabold: "Inter-ExtraBold", sans-serif;
-  --inter-regular: "Inter-Regular", sans-serif;
+  --inter: "Inter", sans-serif;
 }
 
 body {
-  font-family: var(--inter-regular);
-  font-weight: normal;
+  font-family: var(--inter);
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -119,7 +120,7 @@ body {
 
 .nav-list-link {
   text-decoration: none;
-  font-family: var(--inter-regular);
+  font-weight: 400;
   font-size: 1.2rem;
   color: var(--Very-dark-blue);
   transition: color 0.2s ease-in-out;
@@ -141,7 +142,7 @@ body {
 
 .headline-heading {
   font-size: 2.5rem;
-  font-family: var(--inter-extrabold);
+  font-weight: 800;
   color: var(--Very-dark-blue);
   line-height: 1;
 }
@@ -155,7 +156,8 @@ body {
 }
 
 .headline-readmore-btn {
-  font-family: var(--inter-bold);
+  font-weight: 700;
+  font-family: var(--inter);
   text-transform: uppercase;
   border: none;
   background-color: var(--Soft-red);
@@ -198,7 +200,7 @@ body {
 
 .highlight-topic .topic-link {
   color: var(--Off-white);
-  font-family: var(--inter-bold);
+  font-weight: 700;
   font-size: 1.22rem;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -232,7 +234,7 @@ body {
 
 .offtopic-item {
   display: flex;
-  gap: 1.5625em;
+  gap: 1.4em;
   padding: 1em 0;
 }
 
@@ -248,27 +250,27 @@ body {
 
 .offtopic-number {
   font-size: 1.9rem;
-  font-family: var(--inter-bold);
+  font-weight: 700;
   color: var(--Grayish-blue);
 }
 
 .offtopic-heading {
   padding: 0.5em 0;
   letter-spacing: 0.012em;
-  font-family: var(--inter-extrabold);
+  font-weight: 800;
 }
 
 .offtopic-link {
   text-decoration: none;
   font-size: 0.75rem;
-  font-family: var(--inter-extrabold);
+  font-weight: 800;
   color: var(--Very-dark-blue);
 }
 
 .offtopic-desc {
   font-size: 0.95rem;
-  font-weight: 600;
-  color: hsla(236, 13%, 42%, 0.7);
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
   line-height: 1.73;
 }
 
@@ -367,7 +369,7 @@ body {
   .headline-heading {
     grid-area: heading;
     font-size: 3.45rem;
-    font-family: var(--inter-bold);
+    font-weight: 700;
     letter-spacing: -0.009em;
   }
 
@@ -393,7 +395,11 @@ body {
   /* START OFFTOPIC SECTION */
   .offtopic-list {
     flex-direction: row;
-    gap: 0em;
+    gap: 2em;
+  }
+
+  .offtopic-item {
+    width: 33.33%;
   }
 
   .offtopic-container {
