@@ -5,12 +5,12 @@ import OffTopics from "./OffTopics";
 
 const Layout = () => {
   return (
-    <div className="layout">
+    <main className="layout">
       <NavBar />
       <Headlines />
       <Highlights />
       <OffTopics />
-    </div>
+    </main>
   );
 };
 

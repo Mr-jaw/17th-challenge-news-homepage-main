@@ -1,6 +1,6 @@
+import Growth from "../assets/images/image-gaming-growth.jpg";
 import RetroPC from "../assets/images/image-retro-pcs.jpg";
 import Laptops from "../assets/images/image-top-laptops.jpg";
-import Growth from "../assets/images/image-gaming-growth.jpg";
 
 const OffTopics = () => {
   return (

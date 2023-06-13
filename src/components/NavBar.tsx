@@ -1,7 +1,7 @@
-import MainLogo from "../assets/images/logo.svg";
+import { useState } from "react";
 import CloseIcon from "../assets/images/icon-menu-close.svg";
 import MenueIcon from "../assets/images/icon-menu.svg";
-import { useState } from "react";
+import MainLogo from "../assets/images/logo.svg";
 
 const NavBar = () => {
   const [isopened, setOpened] = useState(false);

@@ -1,5 +1,5 @@
-import mobileBanner from "../assets/images/image-web-3-mobile.jpg";
 import desktopBanner from "../assets/images/image-web-3-desktop.jpg";
+import mobileBanner from "../assets/images/image-web-3-mobile.jpg";
 
 const Headlines = () => {
   return (
