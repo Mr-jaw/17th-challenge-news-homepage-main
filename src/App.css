@@ -137,12 +137,13 @@ body {
 .banner-img {
   max-width: 100%;
   height: auto;
-  margin: 1.75em 0;
+  margin: 1.75em 0 1.3em 0;
 }
 
 .headline-heading {
   font-size: 2.5rem;
   font-weight: 800;
+
   color: var(--Very-dark-blue);
   line-height: 1;
 }
@@ -151,7 +152,7 @@ body {
   padding: 1em 0 1.6em 0;
   font-size: 0.95rem;
   line-height: 1.7;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--Dark-grayish-blue);
 }
 
@@ -255,7 +256,7 @@ body {
 }
 
 .offtopic-heading {
-  padding: 0.5em 0;
+  padding: 0.6em 0 0.55em 0;
   letter-spacing: 0.012em;
   font-weight: 800;
 }
@@ -265,11 +266,17 @@ body {
   font-size: 0.75rem;
   font-weight: 800;
   color: var(--Very-dark-blue);
+  transition: color 0.2s ease-in-out;
+}
+
+.offtopic-link:hover {
+  color: var(--Soft-orange);
 }
 
 .offtopic-desc {
   font-size: 0.95rem;
   font-weight: 400;
+
   color: var(--Dark-grayish-blue);
   line-height: 1.73;
 }
@@ -370,15 +377,19 @@ body {
     grid-area: heading;
     font-size: 3.45rem;
     font-weight: 700;
+    padding-top: 0.26em;
     letter-spacing: -0.009em;
   }
 
   .headline-info {
     grid-area: info;
+    padding-left: 0.45em;
   }
 
   .headline-desc {
+    padding: 0.8em 0 2.3em 0;
     font-weight: initial;
+    line-height: 1.55;
   }
 
   .headline-container {
@@ -394,6 +405,7 @@ body {
 
   /* START OFFTOPIC SECTION */
   .offtopic-list {
+    padding-top: 1.65em;
     flex-direction: row;
     gap: 2em;
   }
