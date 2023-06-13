@@ -7,7 +7,7 @@ const Headlines = () => {
       <picture className="banner-container">
         <source srcSet={desktopBanner} media="(min-width:50em)" />
         <source srcSet={mobileBanner} />
-        <img src={mobileBanner} className="banner-img" alt="banner-img" />
+        <img src={mobileBanner} className="banner-img" alt="geometric shapes" />
       </picture>
       <h1 className="headline-heading">The Bright Future of Web 3.0?</h1>
       <div className="headline-info">

@@ -283,6 +283,25 @@ body {
 
 /* END OFFTOPIC SECTION */
 
+/* ATTRIBUTION */
+
+.attribution {
+  width: 28em;
+  position: absolute;
+  font-size: 0.8rem;
+  bottom: 0.5em;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+  color: var(--Off-white);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--Dark-grayish-blue);
+}
+
+.attribution a {
+  color: var(--Soft-orange);
+}
+
 @media (min-width: 50em) {
   body {
     display: flex;
@@ -290,6 +309,7 @@ body {
     align-items: center;
     min-height: 100svh;
     padding: 3em;
+    padding-bottom: 5em;
   }
 
   .navbar-container {
